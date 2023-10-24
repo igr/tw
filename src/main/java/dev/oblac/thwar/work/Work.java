@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 public class Work implements Supplier<String> {
 
 	public static String run() {
-		return CalculatePi.calc10000();
+		return CalculatePi.calc3sec();
 	}
 
 	public static void runAndSleep() {

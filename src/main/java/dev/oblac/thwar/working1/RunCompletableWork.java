@@ -18,9 +18,9 @@ public class RunCompletableWork {
 
 		var sw = StopWatches.start();
 		var futures =
-				IntStream.range(0, CPU_COUNT * 7)
-				.mapToObj(i -> CompletableFuture.supplyAsync(Work::run, Workers.cachedThreadPool))
-//				.mapToObj(i -> CompletableFuture.supplyAsync(Work::run, Workers.fixedThreadPool))
+				IntStream.range(0, CPU_COUNT * 100)
+//				.mapToObj(i -> CompletableFuture.supplyAsync(Work::run, Workers.cachedThreadPool))
+				.mapToObj(i -> CompletableFuture.supplyAsync(Work::run, Workers.fixedThreadPool))
 				.toList();
 
 		Futures.allOf(futures).join();

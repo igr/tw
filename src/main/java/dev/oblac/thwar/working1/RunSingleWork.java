@@ -15,6 +15,6 @@ public class RunSingleWork {
 		});
 
 		System.out.println(elapsed);
-		// 2.44 seconds
+		// 3 seconds
 	}
 }

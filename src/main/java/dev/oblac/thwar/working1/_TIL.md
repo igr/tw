@@ -2,31 +2,31 @@
 
 🔥 N X CPU threads == CPU threads x N
 
-Single work is done in 2.4s. (`RunSingleWork`)
+Single work is done in 3s. (`RunSingleWork`)
 
 ## Cached pool (no limit) - `RunCompletableWork`
 
- | Threads | Time  | Description                              |
-|---------|-------|------------------------------------------|
-| x1      | 3.7s  | Slightly more, other threads are running |
-| x2      | 6.7s  |                                          |
-| x3      | 10.3s |                                          |
-| x4      | 13s   |                                          |
-| x5      | 16.4s |                                          |
-| x6      | 19.4s |                                          |
-| x7      | 23s   |                                          |
+ | Multiplier | Time  |
+|------------|-------|
+| x1         | 4.8s  |
+| x2         | 8.6s  |
+| x3         | 13.2s |
+| x4         | 17.2s |
+| x5         | 21.3s |
+| x6         | 26.5s |
+| x7         | 30.8s |
 
 ## Fixed pool - `RunCompletableWork`
 
-| Threads | Time   | Description                              |
-|---------|--------|------------------------------------------|
-| x1      | 3.7s   | Slightly more, other threads are running |
-| x2      | 6.8s   |                                          |
-| x3      | 10.14s |                                          |
-| x4      | 13.10s |                                          |
-| x5      | 16.2s  |                                          |
-| x6      | 19.3s  |                                          |
-| x7      | 22.7s  |                                          |
+| Multiplier | Time  |
+|------------|-------|
+| x1         | 4.8s  |
+| x2         | 9.0s  |
+| x3         | 13.6s |
+| x4         | 17.8s |
+| x5         | 22.5s |
+| x6         | 26.4s |
+| x7         | 30.8s |
 
 🔥 100 x CPUs in action: 
 

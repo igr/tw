@@ -15,6 +15,10 @@ class CalculatePi {
 		return new CalculatePi().calculatePi(10000, 0, 0);
 	}
 
+	static String calc3sec() {
+		return new CalculatePi().calculatePi(13000, 0, 0);
+	}
+
 	String calculatePi(int digits, int sleepOnTerm, int sleepMillis) {
 
 		MathContext mc = new MathContext(digits);
