@@ -11,12 +11,12 @@ import java.math.MathContext;
  */
 class CalculatePi {
 
-	static String calc10000() {
-		return new CalculatePi().calculatePi(10000, 0, 0);
-	}
-
 	static String calc3sec() {
 		return new CalculatePi().calculatePi(13000, 0, 0);
+	}
+
+	static String calcWait(int sleepOnTerm, int sleepMillis) {
+		return new CalculatePi().calculatePi(13000, sleepOnTerm, sleepMillis);
 	}
 
 	String calculatePi(int digits, int sleepOnTerm, int sleepMillis) {

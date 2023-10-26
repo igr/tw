@@ -17,12 +17,8 @@ public class Work implements Supplier<String> {
 		Sleep.forever();
 	}
 
-	public static void runAndSleep() {
-		run();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException ignored) {
-		}
+	public static String runw() {
+		return CalculatePi.calcWait(100, 500);
 	}
 
 	@Override
