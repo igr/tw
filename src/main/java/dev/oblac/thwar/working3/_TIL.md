@@ -4,29 +4,29 @@
 
 Single work is done in 55s. (`RunSingleWork`)
 
-## Cached pool (no limit) - `RunPackedWork`
+## Cached pool (no limit) - `RunPackedWork` and `RunSemaphoreWork`
 
- | Multiplier | Time |
-|------------|------|
-| x1         | 56s  |
-| x2         | 55s  |
-| x3         | 56s  |
-| x4         | 56s  |
-| x5         | 55s  |
-| x6         | 58s  |
-| x7         | 60s  |
- | x8         | 61s  |
- | x9         | 65s  |
- | x10        | 68s  |
- | x11        | 67s  |
- | x12        | 71s  |
- | x13        | 80s  |
- | x14        | 93s  |
- | x15        | 98s  |
- | x16        | 105s |
- | x17        | 113s |
- | x18        | 118s |
- | x19        | 123s |
+ | Multiplier | Time | Time Semaphored |
+|------------|------|-----------------|
+| x1         | 56s  | 56s             |
+ | x2         | 55s  |                 |
+ | x3         | 56s  |                 |
+ | x4         | 56s  |                 |
+ | x5         | 55s  |                 |
+ | x6         | 58s  |                 |
+ | x7         | 60s  |                 |
+ | x8         | 61s  |                 |
+ | x9         | 65s  |                 |
+ | x10        | 68s  | 57s             |
+ | x11        | 67s  | 58s             |
+ | x12        | 71s  | 59s             |
+ | x13        | 80s  | 59s             |
+ | x14        | 93s  | 60s             |
+ | x15        | 98s  | 62s             |
+ | x16        | 105s | 65s             |
+ | x17        | 113s | 69s             |
+ | x18        | 118s | 73s             |
+ | x19        | 123s | 78              |
 
 ## Fixed pool - `RunPackedWork`
 
