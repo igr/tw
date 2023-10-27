@@ -11,4 +11,5 @@ public class Workers {
 	public static ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
 	public static ExecutorService fixedThreadPool = Executors.newFixedThreadPool(CPU_COUNT);
 	public static ScheduledExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(CPU_COUNT);
+	public static ExecutorService virtualThreadPool = Executors.newVirtualThreadPerTaskExecutor();
 }

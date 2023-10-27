@@ -39,3 +39,8 @@ All threads are in Running state, but they all are starving.
 ![](7x.png)
 
 Here we see that CPU time is 2.9s = calculation time + some extra (probably context switching). However, it takes 23s to complete the task. CPU was doing other jobs for 88% of time.
+
+
+🔥 Virtual thread pool in this case == Fixed thread pool
+
+![](virtx7.png)
